@@ -1,70 +1,153 @@
-# Getting Started with Create React App
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a name="readme-top"></a>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a target="_blank" href="https://github.com/JorgePeniaranda/Jildam.js">
+    <img src="https://github.com/MaximoBrandi/Jildam/blob/main/public/assets/img/jildam_icon.png" alt="Logo" width="80" height="80">
+  </a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <h3 align="center">Jildam</h3>
 
-### `npm test`
+  <p align="center">
+    Password manager and generator web aplication
+    <br />
+    <a target="_blank" href="https://www.google.com">View Demo</a>
+    ·
+    <a href="https://github.com/JorgePeniaranda/Jildam.js/pulls">Report Bug</a>
+    ·
+    <a href="https://github.com/JorgePeniaranda/Jildam.js/pulls">Request Feature</a>
+  </p>
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[![Product Name Screen Shot][product-screenshot]](https://www.google.com)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Jildam is a password management application with a focus on customizing the user experience. In addition to allowing you to manage and generate passwords securely, it also offers the possibility of customizing your profile with information such as your name, surname, biography, and profile picture, like in a forum.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application is developed using React and utilizes Tailwind CSS for the user interface, ensuring a modern and appealing design. React, an open-source JavaScript library, simplifies the creation of interactive and dynamic user interfaces. On the other hand, Tailwind CSS is a highly customizable CSS framework that enables agile and stylized design.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Built With
 
-### Code Splitting
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* [![React.js][React.js]][React-url]
+* [![TailwindCSS][TailwindCSS]][TailwindCSS-url]
 
-### Analyzing the Bundle Size
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- GETTING STARTED -->
+## Getting Started
 
-### Advanced Configuration
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### Getting Started
+This is an example of how you can provide instructions for setting up your React project locally. Follow these simple steps to get a local copy up and running.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Installation
+Here's an example of how to install and set up your app on a Linux system.
 
-### `npm run build` fails to minify
+1. Clone the repository:
+```sh
+git clone https://github.com/your-username/your-react-app.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Navigate to the project directory:
+```sh
+cd your-react-app
+```
+
+3. Install the dependencies using npm:
+```sh
+npm install
+```
+
+4. Start the development server:
+```sh
+npm start
+```
+Open your web browser and navigate to http://localhost:3000 to see your React app in action.
+
+And that's it! You now have a local instance of your React application up and running. You can begin developing, testing, and customizing your app to meet your needs.
+
+Remember to consult your project's documentation for specific setup instructions or additional configuration details. Happy coding!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/maximobrandi/jildam.svg?style=for-the-badge
+[contributors-url]: https://github.com/JorgePeniaranda/Jildam.js/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/maximobrandi/jildam.svg?style=for-the-badge
+[forks-url]: https://github.com/maximobrandi/jildam/network/members
+[stars-shield]: https://img.shields.io/github/stars/maximobrandi/jildam.svg?style=for-the-badge
+[stars-url]: https://github.com/maximobrandi/jildam/stargazers
+[issues-shield]: https://img.shields.io/github/issues/maximobrandi/jildam.svg?style=for-the-badge
+[issues-url]: https://github.com/maximobrandi/jildam/issues
+[product-screenshot]: https://github.com/MaximoBrandi/Jildam/blob/main/public/assets/img/jildam_example.png
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[TailwindCSS]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[TailwindCSS-url]: https://tailwindcss.com/
