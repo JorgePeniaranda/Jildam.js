@@ -141,11 +141,11 @@ Remember to consult your project's documentation for specific setup instructions
 [contributors-shield]: https://img.shields.io/github/contributors/jorgepeniaranda/jildam.js.svg?style=for-the-badge
 [contributors-url]: https://github.com/JorgePeniaranda/Jildam.js/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/jorgepeniaranda/jildam.js.svg?style=for-the-badge
-[forks-url]: https://github.com/maximobrandi/jildam/network/members
+[forks-url]: https://github.com/JorgePeniaranda/Jildam.js/network/members
 [stars-shield]: https://img.shields.io/github/stars/jorgepeniaranda/jildam.js.svg?style=for-the-badge
-[stars-url]: https://github.com/maximobrandi/jildam/stargazers
+[stars-url]: https://github.com/JorgePeniaranda/Jildam.js/stargazers
 [issues-shield]: https://img.shields.io/github/issues/jorgepeniaranda/jildam.js.svg?style=for-the-badge
-[issues-url]: https://github.com/maximobrandi/jildam/issues
+[issues-url]: https://github.com/JorgePeniaranda/Jildam.js/issues
 [product-screenshot]: https://github.com/JorgePeniaranda/Jildam.js/blob/main/jildam_example.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
