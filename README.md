@@ -138,15 +138,15 @@ Remember to consult your project's documentation for specific setup instructions
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/maximobrandi/jildam.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/jorgepeniaranda/jildam.js.svg?style=for-the-badge
 [contributors-url]: https://github.com/JorgePeniaranda/Jildam.js/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/maximobrandi/jildam.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/jorgepeniaranda/jildam.js.svg?style=for-the-badge
 [forks-url]: https://github.com/maximobrandi/jildam/network/members
-[stars-shield]: https://img.shields.io/github/stars/maximobrandi/jildam.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/jorgepeniaranda/jildam.js.svg?style=for-the-badge
 [stars-url]: https://github.com/maximobrandi/jildam/stargazers
-[issues-shield]: https://img.shields.io/github/issues/maximobrandi/jildam.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/jorgepeniaranda/jildam.js.svg?style=for-the-badge
 [issues-url]: https://github.com/maximobrandi/jildam/issues
-[product-screenshot]: https://github.com/MaximoBrandi/Jildam/blob/main/public/assets/img/jildam_example.png
+[product-screenshot]: https://github.com/jorgepeniaranda/jildam.js/jildam_example.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [TailwindCSS]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
