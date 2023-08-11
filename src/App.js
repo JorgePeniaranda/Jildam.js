@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter /* basename="/" */>
       <Navbar />
       <Routes>
-        <Route path="/main" element={<Main />} />
+        <Route path="/main" element={<Main user='Jorge' />} />
       </Routes>
     </BrowserRouter>
   );
