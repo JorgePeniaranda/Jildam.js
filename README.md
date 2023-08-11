@@ -146,7 +146,7 @@ Remember to consult your project's documentation for specific setup instructions
 [stars-url]: https://github.com/maximobrandi/jildam/stargazers
 [issues-shield]: https://img.shields.io/github/issues/jorgepeniaranda/jildam.js.svg?style=for-the-badge
 [issues-url]: https://github.com/maximobrandi/jildam/issues
-[product-screenshot]: https://github.com/jorgepeniaranda/jildam.js/jildam_example.png
+[product-screenshot]: https://github.com/JorgePeniaranda/Jildam.js/blob/main/jildam_example.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [TailwindCSS]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
