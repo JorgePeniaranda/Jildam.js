@@ -3,6 +3,16 @@ import { FiSearch } from "react-icons/fi";
 import Container from '../../Components/Container'
 import UserRow from './Components/UserRow';
 import TopRow from './Components/TopRow';
+import { Account } from '../../Utils/Account';
+
+const AccountList = [
+    new Account(0, "https://www.google.com/", "pepe", "12345678"),
+    new Account(1, "https://www.google.com/", "pepe", "12345678"),
+    new Account(2, "https://www.google.com/", "pepe", "12345678"),
+    new Account(3, "https://www.google.com/", "pepe", "12345678"),
+    new Account(4, "https://www.google.com/", "pepe", "12345678"),
+    new Account(5, "https://www.google.com/", "pepe", "12345678"),
+];
 
 export default function Manage() {
     return (
@@ -19,15 +29,11 @@ export default function Manage() {
                     <TopRow>Contraseña</TopRow>
                     <TopRow>Opciones</TopRow>
                 </tr>
-                <UserRow web='https://www.google.com/' user='pepe' pass='12345sdadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadada678' />
-                <UserRow web='https://www.google.com/' user='pepe' pass='12345678' />
-                <UserRow web='https://www.google.com/' user='pepe' pass='12345678' />
-                <UserRow web='https://www.google.com/' user='pepe' pass='12345678' />
-                <UserRow web='https://www.google.com/' user='pepe' pass='12345678' />
-                <UserRow web='https://www.google.com/' user='pepe' pass='12345678' />
-                <UserRow web='https://www.google.com/' user='pepe' pass='12345678' />
-                <UserRow web='https://www.google.com/' user='pepe' pass='12345678' />
-                <UserRow web='https://www.google.com/' user='pepe' pass='12345678' />
+                {
+                    AccountList.map(account => {
+                        return <UserRow web={account.web} user={account.user} pass={account.pass} />
+                    })
+                }
             </table>
             <button className='bg-blue-600 text-white font-bold w-12 h-12 fixed bottom-4 right-4 text-3xl pb-1 rounded-full hover:bg-blue-500 transition-all ease-linear'>+</button>
         </Container>
