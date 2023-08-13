@@ -15,7 +15,7 @@ export default function UserRow({ web, user, pass }) {
             <td className={BottomFieldsCSS + '  ' + FieldsCSS}>{user}</td>
             <td className={BottomFieldsCSS + ' ' + FieldsCSS}>
                 <PasswordField pass={pass} />
-            </td> {/* copiar al clickear, boton mostrar pass */}
+            </td>
             <td className={BottomFieldsCSS + ' ' + FieldsCSS}>
                 <div className='flex w-full justify-around transition-all ease-linear px-8 items-center'>
                     <FiEdit className={'hover:text-blue-600 ' + buttonOptionsStyle} />
