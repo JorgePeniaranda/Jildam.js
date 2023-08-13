@@ -10,7 +10,7 @@ export default function PasswordField({ pass }) {
 
     return (
         <div className='flex w-full items-center justify-center'>
-            {showPassword ? <span className='cursor-pointer' onClick={console.log(pass)}>{pass}</span> : "••••••••"} {false ? <FiEye className={eyeClass + "text-zinc-400 hover:text-zinc-600"} onClick={() => changeShowPassword()} /> : <FiEyeOff className={eyeClass + "text-zinc-600 hover:text-zinc-400"} onClick={() => changeShowPassword()} />}
+            {showPassword ? <span className='cursor-pointer w-20 overflow-auto' onClick={console.log(pass)}>{pass}</span> : "••••••••"} {false ? <FiEye className={eyeClass + "text-zinc-400 hover:text-zinc-600"} onClick={() => changeShowPassword()} /> : <FiEyeOff className={eyeClass + "text-zinc-600 hover:text-zinc-400"} onClick={() => changeShowPassword()} />}
         </div>
     )
 }

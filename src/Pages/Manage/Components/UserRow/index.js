@@ -10,7 +10,7 @@ export default function UserRow({ web, user, pass }) {
     return (
         <tr>
             <td className={BottomFieldsCSS + ' ' + FieldsCSS}>
-                <a href='https://www.google.com' target="_blank" className='text-blue-600 hover:text-blue-500 underline underline-offset-2' rel="noreferrer">{web}</a>
+                <a href={web} target="_blank" className='text-blue-600 hover:text-blue-500 underline underline-offset-2' rel="noreferrer">{web}</a>
             </td>
             <td className={BottomFieldsCSS + '  ' + FieldsCSS}>{user}</td>
             <td className={BottomFieldsCSS + ' ' + FieldsCSS}>

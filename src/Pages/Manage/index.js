@@ -1,25 +1,15 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { FiSearch } from "react-icons/fi";
 import Container from '../../Components/Container'
 import UserRow from './Components/UserRow';
 import TopRow from './Components/TopRow';
-import { Account } from '../../Utils/Account';
 import { UserContext } from '../../Contexts/userContext';
 
-const AccountList = [
-    new Account(0, "https://www.google.com/", "pepe", "12345678"),
-    new Account(1, "https://www.google.com/", "pepe", "12345678"),
-    new Account(2, "https://www.google.com/", "pepe", "12345678"),
-    new Account(3, "https://www.google.com/", "pepe", "12345678"),
-    new Account(4, "https://www.google.com/", "pepe", "12345678"),
-    new Account(5, "https://www.google.com/", "pepe", "12345678"),
-];
 export default function Manage() {
-    const { userList } = useContext(UserContext);
-    console.log(typeof (userList[0].accounts[0]));
+    const { userList } = React.useContext(UserContext);
     return (
         <Container className='flex items-center flex-col'>
-            <h2 className='w-3/4 border-b-[3px] text-4xl font-semibold mt-10 border-zinc-700/60'>Gestionar Contraseñas</h2>
+            <h2 className='w-3/4 border-b-2 text-3xl font-semibold mt-10 border-zinc-700/60'>Gestionar Contraseñas</h2>
             <div className='w-3/4 h-9 flex justify-center mt-7 mb-3'>
                 <FiSearch className='w-8 pl-2 h-full text-zinc-400 border bg-white border-zinc-700 border-r-0 rounded-l-lg' />
                 <input type='search' placeholder='Buscar' className='w-[60%] outline-none py-1 border border-zinc-700 rounded-r-lg border-l-0 text-xl text-center' />
