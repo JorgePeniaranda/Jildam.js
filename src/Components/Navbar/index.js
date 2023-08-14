@@ -3,6 +3,7 @@ import { FiLogOut } from "react-icons/fi";
 import NavButton from './Components/Navbar-Buttons';
 import JildamLogo from '../../Media/img/jildam.png'
 import SwitchTheme from './Components/SwitchTheme';
+import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
     return (
@@ -18,7 +19,9 @@ export default function Navbar() {
             </ul>
             <ul className='flex items-center text-4xl gap-6 pr-9 w-1/5 justify-end'>
                 <SwitchTheme />
-                <FiLogOut className='cursor-pointer hover:text-red-600 ease-linear transition-all' />
+                <NavLink to='/'>
+                    <FiLogOut className='cursor-pointer hover:text-red-600 ease-linear transition-all' />
+                </NavLink>
             </ul>
         </nav>
     )
