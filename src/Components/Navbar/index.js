@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
         <nav className='w-full h-24 flex items-center z-50 bg-white dark:bg-[#222323] dark:text-white fixed top-0 justify-between select-none shadow-md'>
             <ul className='flex h-full items-center pl-3 w-1/5'>
-                <img src={JildamLogo} alt='Jildam-Logo' className='h-full p-4 pr-0 pointer-events-none' />
+                <img src={JildamLogo} alt='Jildam-Logo' className='h-full p-4 pr-0 dark:invert transition-all ease-linear pointer-events-none' />
                 <h1 className='font-normal text-2xl'>Jildam</h1>
             </ul>
             <ul className='flex w-4/5 gap-5 text-xl justify-around'>
