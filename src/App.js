@@ -10,6 +10,8 @@ import Main from './Pages/Main';
 import Manage from './Pages/Manage';
 import Profile from './Pages/Profile';
 import { UserProvider } from './Contexts/userContext';
+import PersonalizationProfile from './Pages/Profile/Pages/Personalization';
+import SecurityProfile from './Pages/Profile/Pages/Security';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route path="/main" element={<Main user='Jorge' />} />
           <Route path="/manage" element={<Manage />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/profile/personalization" element={<Profile><PersonalizationProfile /></Profile>} />
+          <Route path="/profile/security" element={<Profile><SecurityProfile /></Profile>} />
         </Routes>
         <Footer />
       </BrowserRouter>
