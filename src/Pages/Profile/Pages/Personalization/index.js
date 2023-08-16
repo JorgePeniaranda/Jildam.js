@@ -5,8 +5,8 @@ export default function PersonalizationProfile({ className }) {
     return (
         <div className='grid grid-cols-[45%_55%]'>
             <div className='flex flex-col items-center mt-[6.5rem]'>
-                <img src='' className='w-40 h-40 rounded-full bg-red-600' alt='Profile' />
-                <button className='mt-2 text-blue-600 hover:text-blue-500 underline underline-offset-2 font-semibold'>Cambiar</button>
+                <img src='' className='w-40 h-40 rounded-full bg-red-600 select-none pointer-events-none' alt='Profile' />
+                <button className='mt-2 text-blue-600 hover:text-blue-500 underline select-none underline-offset-2 font-semibold'>Cambiar</button>
             </div>
             <form className='flex flex-col items-center mt-[4.5rem]'>
                 <LabelInputProfile labelText='Usuario' type='text' name='User' required readOnly />
