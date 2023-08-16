@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
@@ -28,9 +28,11 @@ function App() {
           {/* Logged */}
           <Route path="/main" element={<Main user='Jorge' />} />
           <Route path="/manage" element={<Manage />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<Profile><Navigate to='/profile/personalization' /></Profile>} />
           <Route path="/profile/personalization" element={<Profile><PersonalizationProfile /></Profile>} />
           <Route path="/profile/security" element={<Profile><SecurityProfile /></Profile>} />
+
+          <Route path="*" element={<Navigate to='/' />} />
         </Routes>
         <Footer />
       </BrowserRouter>
