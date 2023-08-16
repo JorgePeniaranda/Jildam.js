@@ -9,7 +9,7 @@ export default function UserRow({ web, user, pass }) {
     return (
         <tr>
             <TDContainer>
-                <a href={web} target="_blank" className='text-blue-600 hover:text-blue-500 underline underline-offset-2 w-60 overflow-auto flex' rel="noreferrer">{web}</a>
+                <a href={web} target="_blank" className='text-blue-600 hover:text-blue-500 underline underline-offset-2 w-60 overflow-auto flex mx-auto' rel="noreferrer">{web}</a>
             </TDContainer>
             <TDContainer className="w-full overflow-auto">{user}</TDContainer>
             <TDContainer>
