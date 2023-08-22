@@ -1,6 +1,6 @@
 import React from 'react'
 
-const InputClassName = 'mb-8 border-2 border-zinc-800/30 text-center py-3 w-3/4 rounded-md dark:text-black text-lg';
+const InputClassName = 'mb-8 border-2 border-zinc-800/30 text-center py-3 w-3/4 rounded-lg dark:text-black text-lg';
 
 export default function LabelInputProfile({ labelText, type, name, required, readOnly, disabled }) {
   return (

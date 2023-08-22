@@ -13,7 +13,7 @@ export default function PersonalizationProfile({ className }) {
                 <LabelInputProfile labelText='Nombre' type='text' name='Name' required />
                 <LabelInputProfile labelText='Apellido' type='text' name='LastName' required />
                 <LabelInputProfile labelText='Biografía' type='textarea' name='Bio' required />
-                <button type='submit' className='bg-blue-600 hover:bg-blue-500 transition-all ease-linear mb-10 text-white font-medium text-xl py-2 w-2/6 rounded-2xl'>Guardar</button>
+                <button type='submit' className='bg-blue-600 hover:bg-blue-500 transition-all ease-linear mb-10 text-white font-medium text-xl py-2 w-2/6 rounded-lg'>Guardar</button>
             </form>
         </div>
     )
