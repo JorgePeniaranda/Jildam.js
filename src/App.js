@@ -32,6 +32,7 @@ function App() {
           <Route path="/profile/personalization" element={<Profile><PersonalizationProfile /></Profile>} />
           <Route path="/profile/security" element={<Profile><SecurityProfile /></Profile>} />
 
+          {/* 404 */}
           <Route path="*" element={<Navigate to='/' />} />
         </Routes>
         <Footer />
