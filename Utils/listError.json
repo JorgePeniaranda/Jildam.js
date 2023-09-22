@@ -1,0 +1,13 @@
+{
+  "invalidEmail": "El e-mail no es valido",
+  "matchWithOtherMail": "El e-mail ya está ocupado",
+  "anyUser": "Ingrese Usuario",
+  "invalidUser": "Usuario Invalido",
+  "matchWithOtherUser": "El usuario ya está ocupado",
+  "invalidPassMin": "La contraseña debe tener minimo 8 caracteres",
+  "confirmPassNoMatch": "Las contraseñas no coinciden",
+  "noAcceptTerms": "Es necesario aceptar los terminos para continuar",
+  "userNonExist": "El usuario no existe",
+  "nonPassword": "Ingrese la contraseña",
+  "incorrectPassword": "La contraseña ingresada es incorrecta"
+}
