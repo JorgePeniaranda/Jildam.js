@@ -1,12 +1,13 @@
 import React from "react";
-import JildamLogo from "../../Media/img/jildam.png";
+import JildamLogo from "@/public/img/jildam.png";
 import { TiSocialInstagram } from "react-icons/ti";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="border dark:bg-[#222323] dark:text-white border-t-black/20 select-none pt-10 pb-4 grid grid-cols-2 justify-items-center justify-center">
-      <img
+      <Image
         src={JildamLogo}
         alt="Jildam-Logo"
         className="w-28 dark:invert transition-all ease-linear pointer-events-none"

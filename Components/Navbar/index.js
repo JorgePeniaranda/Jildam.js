@@ -2,29 +2,35 @@
 
 import React from "react";
 import { FiLogOut } from "react-icons/fi";
-import NavButton from "./Components/Navbar-Buttons";
-import JildamLogo from "../../Media/img/jildam.png";
-import SwitchTheme from "./Components/SwitchTheme";
+import JildamLogo from "@/public/img/jildam.png";
+import SwitchTheme from "@/Components/SwitchTheme";
 import Image from "next/image";
 import Link from "next/link";
+import buttonStyles from "@/styles/buttons.module.css";
 
 export default function Navbar() {
   return (
     <nav className="w-full h-24 flex items-center z-50 bg-white dark:bg-[#222323] dark:text-white fixed top-0 justify-between select-none shadow-md">
-      <ul className="flex h-full items-center pl-3 w-1/5">
+      <figure className="flex h-full items-center pl-3 w-1/6">
         <Image
           src={JildamLogo}
           alt="Jildam-Logo"
-          className="h-full p-4 pr-0 dark:invert transition-all ease-linear pointer-events-none"
+          className="h-full w-20 p-4 pr-0 dark:invert ease-linear pointer-events-none"
         />
-        <h1 className="font-normal text-2xl">Jildam</h1>
+        <figcaption className="font-normal text-2xl">Jildam</figcaption>
+      </figure>
+      <ul className="flex w-4/6 gap-5 text-xl justify-around items-center">
+        <Link href="/main" className={buttonStyles.linkedButton}>
+          Inicio
+        </Link>
+        <Link href="/manage" className={buttonStyles.linkedButton}>
+          Gestionar Contraseñas
+        </Link>
+        <Link href="/profile" className={buttonStyles.linkedButton}>
+          Perfil
+        </Link>
       </ul>
-      <ul className="flex w-4/5 gap-5 text-xl justify-around">
-        <NavButton to="/main">Inicio</NavButton>
-        <NavButton to="/manage">Gestionar Contraseñas</NavButton>
-        <NavButton to="/profile">Perfil</NavButton>
-      </ul>
-      <ul className="flex items-center text-4xl gap-6 pr-9 w-1/5 justify-end">
+      <ul className="flex items-center text-4xl gap-6 pr-9 w-1/6 justify-end">
         <SwitchTheme />
         <Link href="/">
           <FiLogOut className="cursor-pointer hover:text-red-600 ease-linear transition-all" />

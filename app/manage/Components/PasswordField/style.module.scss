@@ -1,0 +1,19 @@
+.passwordContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  span {
+    width: 5rem;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    &[name="show"] {
+      color: red;
+    }
+  }
+}
