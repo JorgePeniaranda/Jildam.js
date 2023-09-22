@@ -1,14 +1,6 @@
-import React from "react";
+/* Styles */
+import style from "./style.module.scss";
 
-export default function Container(props) {
-  return (
-    <main
-      className={
-        "w-full h-full pt-24 bg-white dark:bg-[#3d3e3e] dark:text-white " +
-        props.className
-      }
-    >
-      {props.children}
-    </main>
-  );
+export default function Container({ className, children }) {
+  return <main className={style.container + " " + className}>{children}</main>;
 }

@@ -1,12 +1,13 @@
 .linkedButton {
   width: 15rem;
   padding: 0.7rem;
+  font-size: 1.2rem;
   text-align: center;
   border-radius: 0.733rem;
 }
 
 .linkedButton:hover {
-  background-color: rgba(180, 180, 180, 0.15);
+  background-color: rgba(127, 127, 127, 0.15);
   color: var(--linkColor);
   text-decoration: underline;
   text-underline-offset: 4px;

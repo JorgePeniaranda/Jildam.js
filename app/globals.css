@@ -5,8 +5,16 @@
 :root {
   --linkColor: blue;
   --primary: #3b82f6;
-  --white: #fff;
 
+  --white: #fff;
+  --blue: #2563eb;
+  --yellow: #facc15;
+
+  --boxShadow-md: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  /* shadow-[rgba(0,_0,_0,_0.02)_0px_1px_3px_0px,_rgba(27,_31,_35,_0.15)_0px_0px_0px_1px] */
+
+  --navHeight: 6rem;
   --radius-md-button: 0.335rem;
 }
 

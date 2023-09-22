@@ -1,33 +1,36 @@
-import React, { useState } from "react";
+"use client";
+
+/* Packages */
+import { useState } from "react";
+
+/* Components */
 import { FiMoon, FiSun } from "react-icons/fi";
 
-const BaseClassSwitch = "cursor-pointer transition-all ease-linear";
+/* Styles */
+import styles from "./style.module.scss";
 
 export default function SwitchTheme() {
   const [darkMode, setDarkMode] = useState(false);
 
   const switchMode = () => {
-    if (darkMode) document.getElementsByTagName("HTML")[0].className = "light";
-    else document.getElementsByTagName("HTML")[0].className = "dark";
+    let HTMLClassList = document.getElementsByTagName("HTML")[0].classList;
+
+    if (darkMode) HTMLClassList.remove("dark");
+    else HTMLClassList.add("dark");
+    setDarkMode(!darkMode);
   };
 
-  const setMode = () => {
-    setDarkMode(!darkMode);
-    switchMode();
+  const props = {
+    className: styles.darkSwitch,
+    onClick: () => switchMode(),
   };
 
   return (
     <>
       {darkMode ? (
-        <FiSun
-          className={"hover:text-yellow-500 " + BaseClassSwitch}
-          onClick={() => setMode()}
-        />
+        <FiSun name="light" {...props} />
       ) : (
-        <FiMoon
-          className={"hover:text-blue-600 " + BaseClassSwitch}
-          onClick={() => setMode()}
-        />
+        <FiMoon name="dark" {...props} />
       )}
     </>
   );

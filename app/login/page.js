@@ -1,12 +1,19 @@
 "use client";
 
+/* Packages */
 import { useState } from "react";
-import Container from "@/Components/Container";
-import ContainerSessionForm from "@/Components/ContainerSessionForm";
-import InputSessionForm from "@/Components/InputSessionForm";
-import { UserContext } from "@/Contexts/userContext";
-import listError from "@/Utils/listError.json";
+// import { UserContext } from "@/Contexts/userContext";
 import Link from "next/link";
+
+/* Components */
+import Container from "@/Components/Container";
+import InputSessionForm from "@/Components/InputSessionForm";
+
+/* Styles */
+import style from "./style.module.scss";
+
+/* Utils */
+import listError from "@/Utils/listError.json";
 
 export default function Login() {
   // const { loginForm, setLoginForm, login } = React.useContext(UserContext);
@@ -24,7 +31,7 @@ export default function Login() {
   };
   return (
     <Container className="flex justify-center items-center h-full">
-      <ContainerSessionForm>
+      <section>
         <h1 className="select-none text-5xl font-semibold items-end flex h-1/6">
           Loguearte
         </h1>
@@ -61,7 +68,7 @@ export default function Login() {
             Iniciar Sesión
           </button>
         </form>
-      </ContainerSessionForm>
+      </section>
     </Container>
   );
 }

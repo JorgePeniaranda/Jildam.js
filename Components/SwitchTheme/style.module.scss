@@ -1,0 +1,9 @@
+.darkSwitch {
+  cursor: pointer;
+  &[name="light"]:hover {
+    color: var(--yellow);
+  }
+  &[name="dark"]:hover {
+    color: var(--blue);
+  }
+}
