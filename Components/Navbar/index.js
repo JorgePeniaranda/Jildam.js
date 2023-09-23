@@ -1,10 +1,7 @@
-/* Packages */
+/* Components */
 import Link from "next/link";
 import Image from "next/image";
-
-/* Components */
-import SwitchTheme from "@/Components/SwitchTheme";
-import buttonStyles from "@/styles/buttons.module.css";
+import { SwitchTheme } from "@/Components";
 import { FiLogOut } from "react-icons/fi";
 
 /* Assets */
@@ -13,7 +10,7 @@ import JildamLogo from "@/public/img/jildam.png";
 /* Styles */
 import style from "./style.module.scss";
 
-export default function Navbar() {
+export const Navbar = () => {
   return (
     <nav className={style.navbar}>
       <figure>
@@ -21,15 +18,9 @@ export default function Navbar() {
         <figcaption>Jildam</figcaption>
       </figure>
       <ul id="links">
-        <Link href="/main" className={buttonStyles.linkedButton}>
-          Inicio
-        </Link>
-        <Link href="/manage" className={buttonStyles.linkedButton}>
-          Gestionar Contraseñas
-        </Link>
-        <Link href="/profile" className={buttonStyles.linkedButton}>
-          Perfil
-        </Link>
+        <Link href="/main">Inicio</Link>
+        <Link href="/manage">Gestionar Contraseñas</Link>
+        <Link href="/profile">Perfil</Link>
       </ul>
       <ul id="options">
         <li>
@@ -43,4 +34,4 @@ export default function Navbar() {
       </ul>
     </nav>
   );
-}
+};

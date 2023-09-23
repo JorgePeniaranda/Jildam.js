@@ -1,9 +1,13 @@
+/* Import mixins */
+@import "@/styles/_buttons.scss";
+
 .navbar {
   width: 100%;
   height: var(--navHeight);
   display: flex;
   justify-content: space-around;
   padding: 0 3rem;
+  box-shadow: var(--boxShadow-md);
   figure {
     width: 20%;
     display: flex;
@@ -28,6 +32,7 @@
     justify-content: space-around;
     width: 60%;
     a {
+      @include linkedButton;
       user-select: none;
     }
   }

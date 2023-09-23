@@ -1,0 +1,42 @@
+@mixin linkedButton {
+  width: 15rem;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 0.733rem;
+  &:hover {
+    background-color: rgba(127, 127, 127, 0.15);
+    color: var(--linkColor);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transform: scale(1.05);
+  }
+}
+
+@mixin button_md {
+  min-width: 10rem;
+  padding: 0.5rem 0.6rem;
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  font-size: 1.1rem;
+  border-radius: var(--rounded-md);
+  user-select: none;
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
+
+@mixin button_lg {
+  min-width: 15rem;
+  padding: 0.5rem 0.8rem;
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: var(--rounded-md);
+  user-select: none;
+  &:hover {
+    filter: brightness(1.2);
+  }
+}

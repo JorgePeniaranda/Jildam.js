@@ -1,13 +1,12 @@
 "use client";
 
-/* Packages */
+/* Functions */
 import { useState } from "react";
 // import { UserContext } from "@/Contexts/userContext";
-import Link from "next/link";
 
 /* Components */
-import Container from "@/Components/Container";
-import InputSessionForm from "@/Components/InputSessionForm";
+import Link from "next/link";
+import { Container } from "@/Components";
 
 /* Styles */
 import style from "./style.module.scss";
@@ -30,16 +29,11 @@ export default function Login() {
     console.log(response ? listError[response] : "OK");
   };
   return (
-    <Container className="flex justify-center items-center h-full">
+    <Container className={style.loginContainer}>
       <section>
-        <h1 className="select-none text-5xl font-semibold items-end flex h-1/6">
-          Loguearte
-        </h1>
-        <form
-          className="flex flex-col h-5/6 items-center justify-center w-full gap-7"
-          onSubmit={(e) => onSubmit(e)}
-        >
-          <InputSessionForm
+        <h1>Loguearte</h1>
+        <form onSubmit={(e) => onSubmit(e)}>
+          <input
             type="text"
             value={loginForm.auth}
             onChange={(e) => {
@@ -47,7 +41,7 @@ export default function Login() {
             }}
             placeholder="E-Mail..."
           />
-          <InputSessionForm
+          <input
             type="password"
             value={loginForm.pass}
             onChange={(e) => {
@@ -55,18 +49,8 @@ export default function Login() {
             }}
             placeholder="Contraseña..."
           />
-          <Link
-            href="/register"
-            className="select-none text-blue-600 hover:text-blue-400 underline underline-offset-2"
-          >
-            ¿No tienes una cuenta? ¡Regístrate!
-          </Link>
-          <button
-            type="submit"
-            className="select-none text-white bg-blue-600 hover:bg-blue-500 transition-all ease-linear font-medium text-xl py-3 px-5 rounded-lg"
-          >
-            Iniciar Sesión
-          </button>
+          <Link href="/register">¿No tienes una cuenta? ¡Regístrate!</Link>
+          <button type="submit">Iniciar Sesión</button>
         </form>
       </section>
     </Container>

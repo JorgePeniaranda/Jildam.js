@@ -1,12 +1,9 @@
-/* Packages */
-import Link from "next/link";
-
 /* Components */
-import Container from "@/Components/Container";
+import Link from "next/link";
+import { Container } from "@/Components";
 
 /* Styles */
 import styles from "./style.module.scss";
-import buttonsStyle from "@/styles/buttons.module.css";
 
 export default function Home() {
   return (
@@ -26,15 +23,11 @@ export default function Home() {
         <ul>
           <li>
             <span>Ingresar a su cuenta</span>
-            <Link href="/login" className={buttonsStyle.button_md}>
-              Ingresar
-            </Link>
+            <Link href="/login">Ingresar</Link>
           </li>
           <li>
             <span>Crear una cuenta</span>
-            <Link href="/register" className={buttonsStyle.button_md}>
-              Registrarse
-            </Link>
+            <Link href="/register">Registrarse</Link>
           </li>
         </ul>
       </section>

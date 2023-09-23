@@ -1,0 +1,22 @@
+/* Import mixins */
+@import "@/styles/_text.scss";
+
+.manageContainer {
+  display: grid;
+  place-items: center;
+  section {
+    width: 80%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      @include h1-md;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      border-bottom: 2px solid var(--black);
+      margin-top: 2rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@mixin linkText {
+  color: var(--linkColor);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@mixin h1-md {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+@mixin h1-lg {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--black);
+}

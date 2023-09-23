@@ -1,0 +1,44 @@
+.footerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  place-items: center;
+  padding: 2rem 0;
+  gap: 2rem;
+  user-select: none;
+  box-shadow: var(--boxShadow-md);
+  img {
+    width: 7rem;
+    pointer-events: none;
+  }
+  div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    &[id="socialMediaLinks"] {
+      a {
+        padding: 0.5rem;
+        font-size: 2rem;
+        border-radius: 50%;
+        background-color: var(--black);
+        color: var(--white);
+        &:hover {
+          filter: invert(0.8);
+        }
+      }
+    }
+    &[id="terms"] {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      a {
+        color: var(--linkColor);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        margin-top: 0.2rem;
+        &:hover {
+          filter: brightness(1.3);
+        }
+      }
+    }
+  }
+}

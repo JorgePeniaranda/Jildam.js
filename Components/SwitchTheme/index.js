@@ -1,6 +1,6 @@
 "use client";
 
-/* Packages */
+/* Functions */
 import { useState } from "react";
 
 /* Components */
@@ -9,7 +9,7 @@ import { FiMoon, FiSun } from "react-icons/fi";
 /* Styles */
 import styles from "./style.module.scss";
 
-export default function SwitchTheme() {
+export const SwitchTheme = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const switchMode = () => {
@@ -34,4 +34,4 @@ export default function SwitchTheme() {
       )}
     </>
   );
-}
+};

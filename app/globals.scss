@@ -3,19 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --linkColor: blue;
   --primary: #3b82f6;
-
+  --linkColor: #2563eb;
   --white: #fff;
+  --black: black;
+  --gray: #a1a1aa;
   --blue: #2563eb;
   --yellow: #facc15;
 
   --boxShadow-md: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  /* shadow-[rgba(0,_0,_0,_0.02)_0px_1px_3px_0px,_rgba(27,_31,_35,_0.15)_0px_0px_0px_1px] */
+  --boxShadow-lg: 0 -10px 15px -3px rgb(0 0 0 / 0.1),
+    0 -4px 6px -4px rgb(0 0 0 / 0.1);
 
   --navHeight: 6rem;
-  --radius-md-button: 0.335rem;
+  --rounded-md: 0.335rem;
+  --rounded-lg: 1.25rem;
 }
 
 html,

@@ -3,39 +3,39 @@
 @import "@/styles/_buttons.scss";
 @import "@/styles/_text.scss";
 
-.loginContainer {
+.registerContainer {
   display: grid;
   place-items: center;
   section {
-    padding: 5rem;
     width: 30%;
-    height: 90%;
-    gap: 2rem;
+    min-height: 90%;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1rem;
     box-shadow: var(--boxShadow-md);
     border-radius: var(--rounded-lg);
     h1 {
       @include h1-lg;
-      margin-bottom: 2rem;
-      text-align: center;
     }
     form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-      input {
+      display: grid;
+      place-items: center;
+      gap: 1rem;
+      input:not(input[type="checkbox"]) {
         @include input_md;
         text-align: center;
       }
-      a {
-        color: var(--linkColor);
-        text-decoration: underline;
-        text-underline-offset: 2px;
+      div[id="checkBox"] {
+        display: flex;
+        gap: 0.75rem;
         user-select: none;
-        &:hover {
-          filter: brightness(1.2);
-        }
+      }
+      a {
+        @include linkText;
       }
       button {
         @include button_md;

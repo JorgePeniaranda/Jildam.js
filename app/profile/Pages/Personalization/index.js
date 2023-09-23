@@ -1,5 +1,5 @@
 import React from "react";
-import LabelInputProfile from "../../Components/LabelInputProfile";
+import LabelInputProfile from "./Components/LabelInputProfile";
 import Image from "next/image";
 
 export default function PersonalizationProfile({ className }) {
