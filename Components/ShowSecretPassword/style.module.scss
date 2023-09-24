@@ -6,14 +6,17 @@
   span {
     width: 5rem;
     text-align: center;
-    word-wrap: break-word;
   }
   svg {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    color: var(--black);
     cursor: pointer;
+    &:hover {
+      color: var(--gray);
+    }
     &[name="show"] {
-      color: red;
+      color: var(--red);
     }
   }
 }

@@ -1,0 +1,49 @@
+/* Import mixins */
+@import "@/styles/_inputs.scss";
+@import "@/styles/_text.scss";
+@import "@/styles/_buttons.scss";
+
+.personalizationProfileSection {
+  display: flex;
+  flex-wrap: wrap;
+  div[id="profile"] {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    button {
+      @include linkText;
+    }
+  }
+  form {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    gap: 2rem;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      input {
+        @include input-md;
+        text-align: center;
+      }
+      textarea {
+        @include textArea_md;
+      }
+    }
+    button {
+      @include button-md;
+    }
+  }
+}

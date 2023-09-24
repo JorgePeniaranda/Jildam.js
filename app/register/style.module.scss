@@ -7,7 +7,7 @@
   display: grid;
   place-items: center;
   section {
-    width: 30%;
+    width: 40%;
     min-height: 90%;
     margin: 2rem 0;
     display: flex;
@@ -36,6 +36,7 @@
       }
       a {
         @include linkText;
+        text-align: center;
       }
       button {
         @include button_md;

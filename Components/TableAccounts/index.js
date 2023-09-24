@@ -1,8 +1,16 @@
-export const TableAccounts = ({ acounts }) => {
+/* Components */
+import Link from "next/link";
+import { ShowSecretPassword } from "../ShowSecretPassword";
+import { FiEdit, FiX } from "react-icons/fi";
+
+/* Styles */
+import style from "./style.module.scss";
+
+export const TableAccounts = ({ accounts }) => {
   return (
-    <table className="table-fixed w-3/4">
+    <table className={style.TableAccounts}>
       <thead>
-        <tr className="w-full">
+        <tr>
           <th>Web</th>
           <th>Usuario</th>
           <th>Contraseña</th>
@@ -20,13 +28,32 @@ export const TableAccounts = ({ acounts }) => {
                 />
               );
             })} */}
-        <td
-          web={"account.web"}
-          user={"account.user"}
-          pass={
-            "account.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.passaccount.pass"
-          }
-        />
+
+        {accounts.map((account) => {
+          return (
+            <tr key={accounts.indexOf(account)}>
+              <td>
+                <Link href={account.web} target="_blank">
+                  {account.web}
+                </Link>
+              </td>
+              <td>{account.user}</td>
+              <td>
+                <ShowSecretPassword password={account.pass} />
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    <FiEdit name="edit" />
+                  </li>
+                  <li>
+                    <FiX name="remove" />
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   );

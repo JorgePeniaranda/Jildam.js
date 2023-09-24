@@ -1,15 +1,17 @@
+"use client";
+
 import { useState } from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 import style from "./style.module.scss";
 
-export default function PasswordField({ pass }) {
+export const ShowSecretPassword = ({ password }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   const onClick = () => setShowPassword(!showPassword);
 
   return (
     <div className={style.passwordContainer}>
-      <span>{showPassword ? pass : "••••••••"}</span>
+      <span>{showPassword ? password : "••••••••"}</span>
       {showPassword ? (
         <FiEye name="show" onClick={() => onClick()} />
       ) : (
@@ -17,4 +19,4 @@ export default function PasswordField({ pass }) {
       )}
     </div>
   );
-}
+};

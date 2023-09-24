@@ -1,0 +1,29 @@
+/* Import mixins */
+@import "@/styles/_buttons.scss";
+
+.profileContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  img[class="profileImg"] {
+    width: 12rem;
+    height: 12rem;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    user-select: none;
+    background-color: red; //temp
+  }
+}
+
+.asideProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--gray-zinc);
+  padding: 3rem 0;
+  a {
+    @include button-md;
+    width: 80%;
+    padding: 0.8rem 0.6rem;
+  }
+}

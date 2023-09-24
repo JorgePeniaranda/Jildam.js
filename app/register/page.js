@@ -1,12 +1,14 @@
 "use client";
 
+/* this breaks the other pages  */
+
 /* Functions */
 import { useState } from "react";
 // import { UserContext } from "@/Contexts/userContext";
 
 /* Components */
 import Link from "next/link";
-import Container from "@/Components/Container";
+import { Container } from "@/Components";
 
 /* Styles */
 import style from "./style.module.scss";

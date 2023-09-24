@@ -1,0 +1,17 @@
+@import "@/styles/_text.scss";
+
+.AsideProfileSectionDetails {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  button {
+    @include linkText;
+  }
+}
