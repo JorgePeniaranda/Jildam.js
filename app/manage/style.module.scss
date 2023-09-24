@@ -19,6 +19,13 @@
       border-bottom: 2px solid var(--black);
       margin-top: 2rem;
     }
+    div[id="searchBar"] {
+      margin: 1rem 0;
+      width: 60%;
+      input {
+        text-align: center;
+      }
+    }
     button[id="addButton"] {
       width: 3rem;
       height: 3rem;

@@ -1,12 +1,17 @@
 /* Components */
-import { AsideProfileSectionDetails } from "@/Components";
+import {
+  Container,
+  AsideProfileSection,
+  AsideProfileSectionDetails,
+} from "@/Components";
 
 /* Styles */
 import style from "./style.module.scss";
 
 const PersonalizationProfile = () => {
   return (
-    <section className={style.personalizationProfileSection}>
+    <Container className={style.personalizationProfileSection}>
+      <AsideProfileSection />
       <AsideProfileSectionDetails />
       <form>
         <div>
@@ -31,7 +36,7 @@ const PersonalizationProfile = () => {
 
         <button type="submit">Guardar</button>
       </form>
-    </section>
+    </Container>
   );
 };
 

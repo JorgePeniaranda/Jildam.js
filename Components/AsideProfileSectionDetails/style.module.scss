@@ -1,11 +1,18 @@
 @import "@/styles/_text.scss";
 
 .AsideProfileSectionDetails {
-  width: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  img {
+    width: 12rem;
+    height: 12rem;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    user-select: none;
+    background-color: red; //temp
+  }
   ul {
     display: flex;
     flex-direction: column;

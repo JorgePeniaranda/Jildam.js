@@ -1,12 +1,13 @@
 /* Components */
 import Image from "next/image";
+import Link from "next/link";
 
 /* Styles */
 import style from "./style.module.scss";
 
-export const AsideProfileSectionDetails = (pfpPicture, onClickChangePfp) => {
+export const AsideProfileSection = () => {
   return (
-    <div className={style.AsideProfileSectionDetails} id="profile">
+    <aside className={style.asideProfile}>
       <Image
         src="/img/default-pfp.png"
         width={150}
@@ -14,11 +15,8 @@ export const AsideProfileSectionDetails = (pfpPicture, onClickChangePfp) => {
         className="profileImg"
         alt="ProfileIMG"
       />
-      <button>Cambiar</button>
-      <ul>
-        <li>Usuario</li>
-        <li>Nombre Apellido</li>
-      </ul>
-    </div>
+      <Link href="/profile/personalization">Personalizar</Link>
+      <Link href="/profile/security">Privacidad y Seguridad</Link>
+    </aside>
   );
 };

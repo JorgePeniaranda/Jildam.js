@@ -5,6 +5,7 @@ import { SearchBar } from "./SearchBar";
 import { SwitchTheme } from "./SwitchTheme";
 import { TableAccounts } from "./TableAccounts";
 import { ShowSecretPassword } from "./ShowSecretPassword";
+import { AsideProfileSection } from "./AsideProfileSection";
 import { AsideProfileSectionDetails } from "./AsideProfileSectionDetails";
 
 export {
@@ -15,5 +16,6 @@ export {
   SwitchTheme,
   TableAccounts,
   ShowSecretPassword,
+  AsideProfileSection,
   AsideProfileSectionDetails,
 };

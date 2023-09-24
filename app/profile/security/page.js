@@ -1,12 +1,17 @@
 /* Components */
-import { AsideProfileSectionDetails } from "@/Components";
+import {
+  Container,
+  AsideProfileSection,
+  AsideProfileSectionDetails,
+} from "@/Components";
 
 /* Styles */
 import style from "./style.module.scss";
 
 export default function SecurityProfile({ className }) {
   return (
-    <section className={style.securityProfileSection}>
+    <Container className={style.securityProfileSection}>
+      <AsideProfileSection />
       <AsideProfileSectionDetails />
       <ul id="options">
         <li>
@@ -24,7 +29,7 @@ export default function SecurityProfile({ className }) {
           <button id="resetPassword">Resetear contraseñas</button>
         </li>
       </ul>
-    </section>
+    </Container>
   );
 }
 
