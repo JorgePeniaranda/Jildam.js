@@ -3,10 +3,10 @@ import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 import { SearchBar } from "./SearchBar";
 import { SwitchTheme } from "./SwitchTheme";
-import { TableAccounts } from "./TableAccounts";
 import { ShowSecretPassword } from "./ShowSecretPassword";
 import { AsideProfileSection } from "./AsideProfileSection";
 import { AsideProfileSectionDetails } from "./AsideProfileSectionDetails";
+import { Modal } from "./Modal";
 
 export {
   Container,
@@ -14,8 +14,8 @@ export {
   Navbar,
   SearchBar,
   SwitchTheme,
-  TableAccounts,
   ShowSecretPassword,
   AsideProfileSection,
   AsideProfileSectionDetails,
+  Modal,
 };
