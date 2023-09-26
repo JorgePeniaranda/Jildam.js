@@ -4,9 +4,6 @@ import Image from "next/image";
 import { SwitchTheme } from "@/Components";
 import { FiLogOut } from "react-icons/fi";
 
-/* Assets */
-import JildamLogo from "@/public/img/jildam.png";
-
 /* Styles */
 import style from "./style.module.scss";
 
@@ -14,7 +11,12 @@ export const Navbar = () => {
   return (
     <nav className={style.navbar}>
       <figure>
-        <Image src={JildamLogo} alt="Jildam-Logo" />
+        <Image
+          src="/img/jildam.png"
+          width={120}
+          height={200}
+          alt="Jildam-Logo"
+        />
         <figcaption>Jildam</figcaption>
       </figure>
       <ul id="links">

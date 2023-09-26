@@ -6,13 +6,10 @@ import { TiSocialInstagram } from "react-icons/ti";
 /* Styles */
 import style from "./style.module.scss";
 
-/* Assets */
-import JildamLogo from "@/public/img/jildam.png";
-
 export const Footer = () => {
   return (
     <footer className={style.footerContainer}>
-      <Image src={JildamLogo} alt="Jildam-Logo" />
+      <Image src="/img/jildam.png" width={120} height={200} alt="Jildam-Logo" />
       <div id="socialMediaLinks">
         <span>Comunicate con nosotros por nuestras redes</span>
         <Link href="https://www.instagram.com/jildam.cs/" target="_blank">
