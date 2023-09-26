@@ -22,11 +22,11 @@ export default function Login() {
     pass: "adsf",
   });
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: any) => {
     e.preventDefault();
 
-    let response = login();
-    console.log(response ? listError[response] : "OK");
+    // let response = login();
+    // console.log(response ? listError[response] : "OK");
   };
   return (
     <Container className={style.loginContainer}>

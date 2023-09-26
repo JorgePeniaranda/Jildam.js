@@ -4,7 +4,15 @@ import Image from "next/image";
 /* Styles */
 import style from "./style.module.scss";
 
-export const AsideProfileSectionDetails = (pfpPicture, onClickChangePfp) => {
+interface Props {
+  pfpPicture?: string;
+  onClickChangePfp?: () => void;
+}
+
+export const AsideProfileSectionDetails = ({
+  pfpPicture,
+  onClickChangePfp,
+}: Props) => {
   return (
     <div className={style.AsideProfileSectionDetails} id="profile">
       <Image

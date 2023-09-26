@@ -8,25 +8,25 @@ import {
 /* Styles */
 import style from "./style.module.scss";
 
-export default function SecurityProfile({ className }) {
+export default function SecurityProfile() {
   return (
     <Container className={style.securityProfileSection}>
       <AsideProfileSection />
       <AsideProfileSectionDetails />
       <ul id="options">
         <li>
-          <h2 htmlFor="changePassword">Cambiar contraseña</h2>
-          <button id="changePassword">Cambiar contraseña</button>
+          <h2>Cambiar contraseña</h2>
+          <button>Cambiar contraseña</button>
         </li>
 
         <li>
-          <h2 htmlFor="deleteUser">Eliminar cuenta</h2>
-          <button id="deleteUser">Eliminar cuenta</button>
+          <h2>Eliminar cuenta</h2>
+          <button>Eliminar cuenta</button>
         </li>
 
         <li>
           <h2>Borrar contraseñas</h2>
-          <button id="resetPassword">Resetear contraseñas</button>
+          <button>Resetear contraseñas</button>
         </li>
       </ul>
     </Container>

@@ -24,6 +24,13 @@ const Accounts = [
   new Account(5, "https://xdmoment.netlify.app/", "lol", "12345678"),
 ];
 
+interface IAccount {
+  /* Pasar a carpeta tipos */ id: number;
+  web: string;
+  userName: string;
+  password: string;
+}
+
 export default function Manage() {
   const [showEditModal, setShowEditModal] = useState(true);
   const [showAddModal, setShowAddModal] = useState(false);
@@ -52,7 +59,7 @@ export default function Manage() {
             </tr>
           </thead>
           <tbody>
-            {Accounts.map((account) => {
+            {(Accounts as Account[]).map((account) => {
               return (
                 <tr key={Accounts.indexOf(account)}>
                   <td>

@@ -28,11 +28,11 @@ export default function Register() {
     acceptTerms: false,
   });
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: any) => {
     e.preventDefault();
 
-    let response = addNewUser();
-    console.log(response ? listError[response] : "OK");
+    // let response = addNewUser();
+    // console.log(response ? listError[response] : "OK");
   };
 
   return (

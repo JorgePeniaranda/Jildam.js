@@ -4,7 +4,15 @@ import { FiX } from "react-icons/fi";
 /* Styles */
 import style from "./style.module.scss";
 
-export const Modal = ({ children, show, setShow, title, id }) => {
+interface Props {
+  children?: React.ReactNode;
+  show: boolean;
+  setShow: (show: boolean) => void;
+  title?: string;
+  id?: string;
+}
+
+export const Modal = ({ children, show, setShow, title, id }: Props) => {
   const closeModal = () => {
     setShow(false);
   };

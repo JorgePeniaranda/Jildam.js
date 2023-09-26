@@ -31,7 +31,7 @@ const PersonalizationProfile = () => {
 
         <div>
           <label htmlFor="bio">Biografía</label>
-          <textarea type="text" id="bio" required={true} />
+          <textarea id="bio" required={true} />
         </div>
 
         <button type="submit">Guardar</button>
