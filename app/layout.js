@@ -1,5 +1,6 @@
 /* Styles */
 import "./globals.scss";
+import "@/styles/preflight.css";
 
 /* Components */
 import { Navbar, Footer } from "@/Components";
